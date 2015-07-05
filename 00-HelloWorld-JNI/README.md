@@ -20,7 +20,8 @@ javah -jni HelloWorld
 #note 2: prefix your .so file name with "lib" or will not work
 gcc -shared -o libHelloWorld.so -fPIC HelloWorld.c -I$JAVA_HOME/include -I$JAVA_HOME/include/linux 
 
-#make sure your compiled .so file it looks for HelloWorld.h in this directory (or you can change the linked library path)
+#make sure your compiled .so file it looks for HelloWorld.h in 
+this directory (or you can change he linked library path)
 LD_LIBRARY_PATH=.
 export LD_LIBRARY_PATH
 
