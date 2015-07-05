@@ -28,6 +28,38 @@ export LD_LIBRARY_PATH
 java HelloWorld
 ```
 
+## Troubleshooting/Getting Java Setup
+
+
+#### Step 1: getting Java
+
+This is the procedure I used in order to get up and running with Ubuntu
+
+```bash
+sudo apt-get install openjdk-7-jre-headless
+```
+
+If you would like to just use the provided COMPILESCRIPT.sh, 
+then you can use the following code to configure 1.7 as your jdk:
+
+```bash
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+```
+
+#### Step 2: Setting your `$JAVA_HOME` env-variable
+
+add the following to your `~/.bashrc` file:
+
+`export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64`
+
+then run:
+
+`source ~/.bashrc`
+
+check that your JAVA_HOME env variable is
+no longer empty (run `echo $JAVA_HOME`), and your set!
+
 ## References
 
 The canonical reference for JNI is:
