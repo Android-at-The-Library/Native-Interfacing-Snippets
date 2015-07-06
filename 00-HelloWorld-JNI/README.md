@@ -37,7 +37,6 @@ java HelloWorld
 This is the procedure I used in order to get up and running with Ubuntu
 
 ```bash
-sudo apt-get install openjdk-7-jre
 sudo apt-get install openjdk-7-jdk
 ```
 
